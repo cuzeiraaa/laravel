@@ -1,7 +1,4 @@
-@extends('layouts.basico')
+<h1>Id: {{ $id }}</h1>
+<h1>Nome: {{ $nome }}</h1>
 
-@section('titulo', 'Minha Página de Produtos')
-
-@section('conteudo')
-    <h1>Página de Produtos</h1>
-@endsection
+<a href="{{ route('produtos', ['id'=>333, 'nome'=>'Carro']) }}">Produto 1</a>
